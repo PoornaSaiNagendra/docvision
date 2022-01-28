@@ -1,0 +1,77 @@
+<div class="le-l-mainwrapper">
+    <leds-header>
+        <div class="container-fluid align-items-center" id="mainHeader">
+          <leds-apps-menu class="le-u-mar-t-16"></leds-apps-menu>
+          
+          <a href="javascript:void(0)" class="le-c-header__logo le-u-mar-l-16 float-start">Launchpad Admin</a>
+      
+          <ul class="le-c-header__right-util js-right-util float-end">
+
+            <li class="d-none d-xl-inline-block">
+              <a href="javascript:void(0)" class="d-inline-block le-u-pad-tb-16 le-c-header__activelink" (click)='clickactive($event);' id="togglepanelButton" aria-label="notification">
+                <img alt="" src="assets/svg/ic_Task List.svg"/>
+              </a>
+            </li>
+            
+            <li class="d-none d-xl-inline-block">
+              <a href="javascript:void(0)" class="d-inline-block le-u-pad-tb-16 le-c-header__activelink" (click)='clickactive($event);' id="togglepanelButton" aria-label="notification">
+                <i aria-hidden="true" class="icon x-24 white notification-icon relative"></i>
+              </a>
+            </li>
+
+
+            <li class="d-none d-xl-block">
+              <span class="le-c-header__profile le-u-pad-tb-8 le-u-pad-l-16 le-c-header__activelink le-c-header__profile">
+                <leds-overflow>
+                  <div ngbDropdown class="d-inline-block le-u-mar-r-8 le-u-v-mid">
+                    <a href="javascript:void(0);" id="OverflowMenu_dd" ngbDropdownToggle (click)='clickactive($event);' class="le-c-header__dropdown-desktop" aria-label="profile menu">
+                      <img alt="avatar" class="avatarImageCircle" src="assets/images/avatar1.png"/>
+                    </a>
+                  </div>
+                </leds-overflow>
+              </span>
+            </li>
+
+          </ul>
+
+          <div class="le-c-header-search relative d-none d-xl-block">
+            <input headerSearchInput placeholder="Candidate Name / Event Title" aria-label="Candidate Name / Event Title" />
+            <a headerSearchIcon href="javascript:void(0)" class="iconinline icon x-24 search-icon" aria-label="search"></a>
+          </div>
+        </div>
+      </leds-header>
+
+  <div class="row">
+    <div class="le-l-level1-middle-col " style="margin-top: 100px">
+      <leds-accordion [designType]='designType' [hideToggle]='hideToggle' [multi]='multi'>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+            <mat-panel-title>
+                <leds-checkbox [checked]='checked' [disabled]='disabled' [indeterminate]='indeterminate' [labelPosition]='labelPosition' [disableRipple]='disableRipple'>
+                  Passport front page
+                </leds-checkbox>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="le-u-mar-16">
+            <h4 class="le-u-header-lg">Title</h4>
+            <p class="le-u-body-sm le-u-text-neutral-80">Description text</p>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+            <mat-panel-title>
+              <leds-checkbox [checked]='checked' [disabled]='disabled' [indeterminate]='indeterminate' [labelPosition]='labelPosition' [disableRipple]='disableRipple'>
+                Passport back page
+              </leds-checkbox>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <div class="le-u-mar-16">
+            <h4 class="le-u-header-lg">Title</h4>
+            <p class="le-u-body-sm le-u-text-neutral-80">Description text</p>
+          </div>
+        </mat-expansion-panel>
+      </leds-accordion>
+    </div>
+  </div>
+</div>
