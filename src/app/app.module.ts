@@ -12,7 +12,9 @@ import { HeaderModule,
   CardModule,
   ListModule,
   SelectModule,
-  ChipListModule
+  ChipListModule,
+  DataGridModule,
+  PanelModule
 } from 'leds-lib';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -48,7 +50,9 @@ import { CheckboxModule } from 'leds-lib'
     ListModule,
     TabGroupModule,
     SelectModule,
-    ChipListModule
+    ChipListModule,
+    DataGridModule,
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
