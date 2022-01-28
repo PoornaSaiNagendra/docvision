@@ -1,6 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HeaderModule, OverflowModule, NavigationModule, AppsMenuModule, ButtonModule, TabGroupModule, AccordionModule, BadgeModule} from 'leds-lib';
+import { HeaderModule, 
+  OverflowModule, 
+  NavigationModule, 
+  AppsMenuModule, 
+  ButtonModule, 
+  TabGroupModule, 
+  AccordionModule, 
+  BadgeModule, 
+  MultiColContainerModule,
+  CardModule,
+  ListModule,
+  SelectModule,
+  ChipListModule
+} from 'leds-lib';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -28,7 +42,13 @@ import { CheckboxModule } from 'leds-lib'
     BadgeModule,
     MatExpansionModule,
     CheckboxModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MultiColContainerModule,
+    CardModule,
+    ListModule,
+    TabGroupModule,
+    SelectModule,
+    ChipListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

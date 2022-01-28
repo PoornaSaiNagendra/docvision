@@ -42,33 +42,71 @@
       </leds-header>
 
   <div class="row">
-    <div class="le-l-level1-middle-col " style="margin-top: 100px">
+    <div class="le-l-level1-middle-col" style="margin-top: 100px">
       <leds-accordion [designType]='designType' [hideToggle]='hideToggle' [multi]='multi'>
         <mat-expansion-panel>
           <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
             <mat-panel-title>
-                <leds-checkbox [checked]='checked' [disabled]='disabled' [indeterminate]='indeterminate' [labelPosition]='labelPosition' [disableRipple]='disableRipple'>
-                  Passport front page
-                </leds-checkbox>
+                <leds-checkbox>Passport front page</leds-checkbox>
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="le-u-mar-16">
-            <h4 class="le-u-header-lg">Title</h4>
-            <p class="le-u-body-sm le-u-text-neutral-80">Description text</p>
+            <p class="le-u-body-sm le-u-text-neutral-80">
+              <leds-multi-col-container> 
+                <div panel panelBorder class="le-u-mar-b-16">
+                  <div panelBody class="clearfix">
+                    <div paneTwoColVar>
+                      <div firstColPanel>
+                        <leds-checkbox>Uploaded under right category</leds-checkbox>
+                        <leds-checkbox>Scan quality of document is clear</leds-checkbox>
+                        <leds-checkbox>Document under concered employee name</leds-checkbox>
+                        <leds-checkbox>Uploaded under right category</leds-checkbox>
+                        <leds-checkbox>Company name reflecting</leds-checkbox>
+                        <leds-checkbox>DOJ and DOL is correct</leds-checkbox>
+                        <leds-checkbox>Internet copy/ Duplicate copy</leds-checkbox>
+                        <leds-checkbox>Mandatory for background check</leds-checkbox>
+                      </div>
+                      <div thirdColPanel>
+                        second column
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </leds-multi-col-container>
+            </p>
           </div>
         </mat-expansion-panel>
         <mat-expansion-panel>
           <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
             <mat-panel-title>
-              <leds-checkbox [checked]='checked' [disabled]='disabled' [indeterminate]='indeterminate' [labelPosition]='labelPosition' [disableRipple]='disableRipple'>
-                Passport back page
-              </leds-checkbox>
+              <leds-checkbox>Passport back page</leds-checkbox>
             </mat-panel-title>
           </mat-expansion-panel-header>
 
           <div class="le-u-mar-16">
-            <h4 class="le-u-header-lg">Title</h4>
-            <p class="le-u-body-sm le-u-text-neutral-80">Description text</p>
+            <p class="le-u-body-sm le-u-text-neutral-80">
+              <leds-multi-col-container> 
+                <div panel panelBorder class="le-u-mar-b-16">
+                  <div panelBody class="clearfix">
+                    <div paneTwoColVar>
+                      <div firstColPanel>
+                        <leds-checkbox>Uploaded under right category</leds-checkbox>
+                        <leds-checkbox>Scan quality of document is clear</leds-checkbox>
+                        <leds-checkbox>Document under concered employee name</leds-checkbox>
+                        <leds-checkbox>Uploaded under right category</leds-checkbox>
+                        <leds-checkbox>Company name reflecting</leds-checkbox>
+                        <leds-checkbox>DOJ and DOL is correct</leds-checkbox>
+                        <leds-checkbox>Internet copy/ Duplicate copy</leds-checkbox>
+                        <leds-checkbox>Mandatory for background check</leds-checkbox>
+                      </div>
+                      <div thirdColPanel>
+                        second column
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </leds-multi-col-container>
+            </p>
           </div>
         </mat-expansion-panel>
       </leds-accordion>
